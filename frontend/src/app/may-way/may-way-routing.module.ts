@@ -6,7 +6,7 @@ const routes: Routes = [
     {
     path: 'cv',
     component: MainProfileComponent
-},
+    },
 ];
 
 @NgModule({
