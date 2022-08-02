@@ -8,7 +8,7 @@ import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -18,11 +18,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AccordionModule,
     ButtonModule,
     RippleModule,
-    
+
     AppRoutingModule,
     BrowserAnimationsModule,
-    FontAwesomeModule
-    
+ 
+
   ],
   exports:[],
   providers: [],
