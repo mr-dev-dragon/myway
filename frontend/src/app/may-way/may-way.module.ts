@@ -8,15 +8,8 @@ import { ResumeProfilesModule } from './components/resume-profiles/resume-profil
 
 
 @NgModule({
-  declarations: [
-    NavbarComponent,
-    FooterComponent
-  ],
-  imports: [
-    CommonModule,
-    MayWayRoutingModule,
-    ResumeProfilesModule
-
-  ]
+  declarations: [NavbarComponent, FooterComponent],
+  imports: [CommonModule, MayWayRoutingModule, ResumeProfilesModule],
+  exports: [NavbarComponent, FooterComponent, CommonModule],
 })
-export class MayWayModule { }
+export class MayWayModule {}

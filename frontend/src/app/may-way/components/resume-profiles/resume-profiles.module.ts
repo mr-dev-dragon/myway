@@ -14,6 +14,10 @@ import { SuggestionComponent } from './suggestion/suggestion.component';
   imports: [
     CommonModule,
     ResumeProfilesRoutingModule
+  ],
+  exports: [
+    MainProfileComponent,
+    SuggestionComponent
   ]
 })
 export class ResumeProfilesModule { }
