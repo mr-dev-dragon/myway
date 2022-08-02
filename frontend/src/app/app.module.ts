@@ -8,6 +8,7 @@ import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MayWayModule } from './may-way/may-way.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
     AppRoutingModule,
     BrowserAnimationsModule,
- 
+    MayWayModule
+
 
   ],
   exports:[],

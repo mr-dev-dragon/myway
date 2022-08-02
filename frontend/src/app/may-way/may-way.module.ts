@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MayWayRoutingModule } from './may-way-routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ResumeProfilesModule } from './components/resume-profiles/resume-profiles.module';
 
 
 @NgModule({
@@ -13,7 +14,9 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     CommonModule,
-    MayWayRoutingModule
+    MayWayRoutingModule,
+    ResumeProfilesModule
+
   ]
 })
 export class MayWayModule { }
