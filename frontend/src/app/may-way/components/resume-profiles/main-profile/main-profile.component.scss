@@ -5,14 +5,12 @@
 
 
 .card-body{
-  margin: 0;
-  padding: 0;
-  background: rgb(230,230,230);
+  background: rgb(248, 253, 253);
 
-  color: rgb(50,50,50);
+
   font-family: 'Open Sans', sans-serif;
-  font-size: 112.5%;
-  line-height: 1.6em;
+
+
 }
 
 /* ================ The Timeline ================ */
@@ -24,6 +22,8 @@
   margin-top: 20px;
   padding: 1em 0;
   list-style-type: none;
+  top: 0%;
+  left: -40%;
 }
 
 .timeline:before {
