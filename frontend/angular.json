@@ -28,10 +28,16 @@
               "src/assets"
             ],
             "styles": [
-              ".node_modules/bootstrap/dist/css/bootstrap.css",
-              "src/styles.scss"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.scss",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css"
+              
+             
             ],
             "scripts": [
+             
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
