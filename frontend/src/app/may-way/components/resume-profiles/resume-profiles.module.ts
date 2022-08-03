@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { ResumeProfilesRoutingModule } from './resume-profiles-routing.module';
 import { MainProfileComponent } from './main-profile/main-profile.component';
 import { SuggestionComponent } from './suggestion/suggestion.component';
+import { TestComponent } from './test/test.component';
 
 
 @NgModule({
   declarations: [
     MainProfileComponent,
-    SuggestionComponent
+    SuggestionComponent,
+    TestComponent
   ],
   imports: [
     CommonModule,
