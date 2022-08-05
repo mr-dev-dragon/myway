@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-profile.component.scss']
 })
 export class MainProfileComponent implements OnInit {
+  constructor() {
 
-  constructor() { }
+
+
+
+  }
 
   ngOnInit(): void {
   }
+
+
+
+
+
+
+
 
 }
