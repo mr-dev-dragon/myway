@@ -1,75 +1,141 @@
-<div class="b-example-divider"></div>
 
-  <header class="p-3 mb-3 border-bottom" style="box-shadow:15px 5px 20px grey ;">
-    <div class="container-fluid">
-        
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <!-- <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-        </a> -->
 
-        <h1 style="margin-left:15px;">MyWay</h1>
-
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="margin-left:100px ;">
-          <li><a href="/accueil" class="nav-link px-2 link-secondary">Accueil</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">Entreprises</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">Offres</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">Formations</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">Conseils</a></li>
-          <li><a href="#" class="nav-link px-2 link-dark">Actualités</a></li>
-        </ul>
-
-        <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-        </form> -->
-
-        <div class="dropdown text-end">
-           
-          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="" alt="mdo" width="32" height="32" class="rounded-circle">
+<!--DEBUT DE NAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #c4f8ffba; padding: 20px; box-shadow: 10px 7px 15px #cdcbcb;" >
+  <div class="container-fluid " style="margin-left: 90px">
+    <a class="navbar-brand logo-font" style="margin-left: -50px; font-size: 25px; " href="#">MyWay</a>
+    <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor"
+      aria-controls="navbarColor" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor" style=" padding-left: 100px">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-left: 15px;">
+      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+            Emploi/ Stage
           </a>
-          <ul class=" dropdown-menu dropdown-menu-right collapse  text-small">
-            <li><a class="dropdown-item" href="#">Se connecter</a></li>
-            <li><a class="dropdown-item" href="#">S'inscrire</a></li>
-            <!-- <li><a class="dropdown-item" href="#">Profile</a></li> -->
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          <ul  class=" dropdown-menu">
+            <li><a class="dropdown-item" href="#">Offres d'emploi</a></li>
+            <li><a class="dropdown-item" href="#">Offres de stage</a></li>
+            <li><a class="dropdown-item" href="#">Demande spécifique</a></li>
           </ul>
-        </div>
+        </li>
 
-<!--         
-        <div class="dropdown text-end">
-            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="" alt="mdo" width="32" height="32" class="rounded-circle">
-            </a>
-            <ul class=" dropdown-menu dropdown-menu-right collapse  text-small">
-              <li><a class="dropdown-item" href="#">Se connecter</a></li>
-              <li><a class="dropdown-item" href="#">S'inscrire</a></li>
-               <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-          </div> -->
-      </div>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Compétences</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Création d'entreprise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Formations</a>
+        </li> -->
+      
+        <li class="nav-item dropdown">
+          <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+            Annuaires
+          </a>
+          
+          <ul  class=" dropdown-menu" >
+            <li><a class="dropdown-item" href="#">Recruteurs</a></li>
+            <li><a class="dropdown-item" href="#">Cabinets de recrutement</a></li>
+            <li><a class="dropdown-item" href="#">Associations d'insertion économique </a></li>
+            <li><a class="dropdown-item" href="#">Etablissements de formations</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+            Infos pratiques
+          </a>
+          <ul  class=" dropdown-menu">
+            <li><a class="dropdown-item" href="#">Conseils pratiques</a></li>
+            <li><a class="dropdown-item" href="#">Adresses utiles  </a></li>
+            <li><a class="dropdown-item" href="#">Liens utiles</a></li>
+            <li><a class="dropdown-item" href="#">Documents et formulaires à télécharger</a></li>
+            <li><a class="dropdown-item" href="#">législations et textes de lois</a></li>
+            <li><a class="dropdown-item" href="#">Evénements et actualités</a></li>
+          </ul>
+        </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Espace communautaire
+          </a>
+          <ul  class= "dropdown-menu">
+            <li><a class="dropdown-item" href="#">Forums de discussions</a></li>
+            <li><a class="dropdown-item" href="#">Sondages  </a></li>
+            <li><a class="dropdown-item" href="#">Témoignages</a></li>
+            <li><a class="dropdown-item" href="#">Soutiens  </a></li>
+           
+          </ul>
+        </li>
+
+      </ul>
+      <!-- <form class="d-flex" style="align-items:baseline">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form> -->
     </div>
-   
+    <!-- <div
+      class="nav navbar-nav ml-md--auto ml-auto action-buttons"
+     
+    >
+      <div class="nav-item dropdown">
+        <a [routerLink]="['/login']" class="nav-link mr-4">Login</a>
+      </div>
+      <div class="nav-item dropdown">
+        <a [routerLink]="['/register']" class="btn btn-primary dsign-up-btn">
+          Sign up
+        </a>
+      </div>
+    </div> -->
+    <!-- <div>
+    <img _ngcontent-serverapp-c83="" src="../../../../assets/img navbar/téléchargement.png" alt="settong" class="setting-icon ng-star-inserted">
+  </div> -->
+    <div class="dropdown text-end">
 
-  </header>
+      <a href="#" class="link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+        aria-expanded="false" style="padding-left: 30px" >
+        <img src="" alt="mdo" width="32" height="32" class="rounded-circle">
+      </a>
+      <ul class=" dropdown-menu dropdown-menu-right collapse  text-small">
+        <li><a class="dropdown-item" href="#">Se connecter</a></li>
+        <li><a class="dropdown-item" href="#">S'inscrire</a></li>
+        <!-- <li><a class="dropdown-item" href="#">Profile</a></li> -->
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-      <div class="col mb-3">
-        <!-- <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <!-- <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
           <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
         </a> -->
-        <h1 style="margin-left:15px;">MyWay</h1>
-        <p class="text-muted">&copy; 2022</p>
-      </div>
-  
-      <div class="col mb-3">
-  
-      </div>
-  <div style="display:contents ;">
+      <h1 style="margin-left:15px;">MyWay</h1>
+      <p class="text-muted">&copy; 2022</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+    <div style="display:contents ;">
       <div class="col mb-3">
         <h5>Candidats</h5>
         <ul class="nav flex-column">
@@ -78,10 +144,10 @@
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Découvrir les entreprises</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Conseils pour vous</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-         
+
         </ul>
       </div>
-  
+
       <div class="col mb-3">
         <h5>Offres</h5>
         <ul class="nav flex-column">
@@ -90,10 +156,10 @@
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Offres par métier</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Offres par région</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          
+
         </ul>
       </div>
-  
+
       <div class="col mb-3">
         <h5>Conseils</h5>
         <ul class="nav flex-column">
@@ -101,7 +167,7 @@
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Conseils pour candidats</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Conseils pour les entreprises</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          
+
         </ul>
       </div>
 
@@ -112,13 +178,13 @@
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Documents pour candidats</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Documents pour les entreprises</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          
+
         </ul>
       </div>
-  </div>
+    </div>
 
-    </footer>
-  </div>
+  </footer>
+</div>
 <div class="container">
   <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">

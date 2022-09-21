@@ -6,9 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
-
+import { TabViewModule } from 'primeng/tabview';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MayWayModule } from './may-way/may-way.module';
+import { CommonModule } from '@angular/common';
+import { OffresModule } from './may-way/components/offres/offres.module';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { MayWayModule } from './may-way/may-way.module';
     AccordionModule,
     ButtonModule,
     RippleModule,
-
+    CommonModule,
+    OffresModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MayWayModule
+    MayWayModule,
+    // TabViewModule
 
 
   ],

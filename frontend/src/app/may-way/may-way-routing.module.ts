@@ -5,6 +5,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AcceuilComponent } from './components/accueil/acceuil/acceuil.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ListOffreComponent } from './components/offres/list-offre/list-offre.component';
+import { DetailOffreComponent } from './components/offres/detail-offre/detail-offre.component';
 
 const routes: Routes = [
   {path:'navbar', 
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path:'offres',
     component:ListOffreComponent
+  },
+  {
+    path:'detail',
+    component:DetailOffreComponent
   }
 
 ];

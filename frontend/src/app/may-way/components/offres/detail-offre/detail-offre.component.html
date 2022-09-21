@@ -1,0 +1,719 @@
+<!--DEBUT DE NAVBAR-->
+<nav
+  class="navbar navbar-expand-lg navbar-light"
+  style="
+    background-color: #c4f8ffba;
+    padding: 20px;
+    box-shadow: 10px 7px 15px #cdcbcb;
+  "
+>
+  <div class="container-fluid" style="margin-left: 90px;">
+    <a
+      class="navbar-brand logo-font"
+      style="margin-left: -50px; font-size: 25px;"
+      href="#"
+    >
+      MyWay
+    </a>
+    <button
+      class="navbar-toggler order-first"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarColor"
+      aria-controls="navbarColor"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse"
+      id="navbarColor"
+      style="padding-left: 100px;"
+    >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-left: 15px;">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Emploi/ Stage
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Offres d'emploi</a></li>
+            <li><a class="dropdown-item" href="#">Offres de stage</a></li>
+            <li><a class="dropdown-item" href="#">Demande spécifique</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Compétences</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Création d'entreprise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Formations</a>
+          </li> -->
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Annuaires
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Recruteurs</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Cabinets de recrutement</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                Associations d'insertion économique
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Etablissements de formations</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Infos pratiques
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Conseils pratiques</a></li>
+            <li><a class="dropdown-item" href="#">Adresses utiles</a></li>
+            <li><a class="dropdown-item" href="#">Liens utiles</a></li>
+            <li>
+              <a class="dropdown-item" href="#">
+                Documents et formulaires à télécharger
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                législations et textes de lois
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Evénements et actualités</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Espace communautaire
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Forums de discussions</a></li>
+            <li><a class="dropdown-item" href="#">Sondages</a></li>
+            <li><a class="dropdown-item" href="#">Témoignages</a></li>
+            <li><a class="dropdown-item" href="#">Soutiens</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- <form class="d-flex" style="align-items:baseline">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </form> -->
+    </div>
+    <!-- <div
+        class="nav navbar-nav ml-md--auto ml-auto action-buttons"
+       
+      >
+        <div class="nav-item dropdown">
+          <a [routerLink]="['/login']" class="nav-link mr-4">Login</a>
+        </div>
+        <div class="nav-item dropdown">
+          <a [routerLink]="['/register']" class="btn btn-primary dsign-up-btn">
+            Sign up
+          </a>
+        </div>
+      </div> -->
+    <!-- <div>
+      <img _ngcontent-serverapp-c83="" src="../../../../assets/img navbar/téléchargement.png" alt="settong" class="setting-icon ng-star-inserted">
+    </div> -->
+    <div class="dropdown text-end">
+      <a
+        href="#"
+        class="link-dark text-decoration-none dropdown-toggle"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        style="padding-left: 30px;"
+      >
+        <img src="" alt="mdo" width="32" height="32" class="rounded-circle" />
+      </a>
+      <ul class="dropdown-menu dropdown-menu-right collapse text-small">
+        <li><a class="dropdown-item" href="#">Se connecter</a></li>
+        <li><a class="dropdown-item" href="#">S'inscrire</a></li>
+        <!-- <li><a class="dropdown-item" href="#">Profile</a></li> -->
+        <li>
+          <hr class="dropdown-divider" />
+        </li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="margin-top: 131px;">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-3">
+        <img
+          src="../../../../../assets/images pour offres/téléchargement.png"
+          class="img-fluid rounded-start"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body p-0" style="margin-top: 18px;">
+          <h5
+            class="card-title"
+            style="font-size: 25px; margin-top: 22px; margin-bottom: 13px;"
+          >
+            {{ details.Titre }} / {{ details.Secteur }}
+          </h5>
+          <h5 class="poste">{{ details.Poste }}</h5>
+          <h6
+            style="color: #4c4a4a; font-size: 20px; margin-bottom: 13px;"
+            class="card-text"
+          >
+            {{ details.NomEntreprise }} : {{ details.TypeEntreprise }}
+          </h6>
+          <ul
+            style="
+              list-style: none;
+              display: flex;
+              padding: 0;
+              margin-bottom: 13px;
+              color: #6e6b6b;
+            "
+          >
+            <li style="margin-right: 20px;">
+              <i class="fa-regular fa-calendar"></i>
+              Date de publication:
+            </li>
+            <li>
+              <i class="fa-regular fa-calendar"></i>
+              Date de postulation:
+            </li>
+          </ul>
+          <p class="card-text"></p>
+          <p class="card-text"></p>
+          <div class="row fiche1">
+            <ul class="p-0 col-md-6">
+              <small
+                class="text-muted"
+                style="list-style: none; display: flex; font-size: 15px;"
+              >
+                <li style="padding-right: 20px;">
+                  <i class="fa-solid fa-file-contract"></i>
+                  contrat
+                </li>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  adresse complete
+                </li>
+              </small>
+            </ul>
+            <ul class="col-md-6 socialMedia1">
+              <li class="socialMedia">
+                <p>Partager sur:</p>
+              </li>
+
+              <li>
+                <div class="addthis_inline_share_toolbox_hvun"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card">
+      <!-- <h5>Détails de l'offre</h5> -->
+      <p-tabView>
+        <p-tabPanel header="Détails de l'offre">
+          <!-- <div class="details">
+            <div *ngFor="let info of details.Description">
+              <h6 class="criteres-offres" *ngIf="info.Titre">
+                {{ info.Titre }} {{ details.Intitule }}
+              </h6>
+              <p *ngIf="info.Texte">{{ info.Texte }}</p>
+              <ul *ngIf="info.List">
+                <li *ngFor="let list of info.List">{{ list }}</li>
+              </ul>
+            </div>
+            <h6 class="criteres-offres">Critères de l'offre:</h6>
+            <ul>
+              <li>Secteur d'activité: {{ details.Secteur }}</li>
+              <li>Type de contrat: {{ details.TypeContrat }}</li>
+              <li>Région: {{ details.Region }}</li>
+              <li>Ville: {{ details.Ville }}</li>
+              <li>Niveaux d'études: {{ details.NiveauxEt }}</li>
+              <li>Niveau d'expérience: {{ details.NiveauxEx }}</li>
+              <li>langues exigées: {{ details.Langues }}</li>
+              <li>Salaire: {{ details.Salaire }}</li>
+              <li>Compétence clés: {{ details.Competences }}</li>
+              <li>Nombres de poste(s): {{ details.NombresPoste }}</li>
+            </ul>
+          </div> -->
+          <p-accordion>
+            <p-accordionTab header="Description " [selected]="true">
+              <div *ngFor="let info of details.Description">
+                <h6 class="criteres-offres" *ngIf="info.Titre">
+                  {{ info.Titre }} {{ details.Intitule }}
+                </h6>
+                <p *ngIf="info.Texte">{{ info.Texte }}</p>
+                <ul *ngIf="info.List">
+                  <li *ngFor="let list of info.List">{{ list }}</li>
+                </ul>
+              </div>
+            </p-accordionTab>
+
+            <p-accordionTab header="Missions ">
+              <div *ngFor="let info of details.Missions">
+                <h6 class="criteres-offres" *ngIf="info.Titre">
+                  {{ info.Titre }}
+                </h6>
+                <p *ngIf="info.Texte">{{ info.Texte }}</p>
+                <ul *ngIf="info.List">
+                  <li *ngFor="let list of info.List">{{ list }}</li>
+                </ul>
+              </div>
+            </p-accordionTab>
+
+            <p-accordionTab header="Profil recherché">
+              <div *ngFor="let info of details.ProfilRecherche">
+                <h6 class="criteres-offres" *ngIf="info.Titre">
+                  {{ info.Titre }}
+                </h6>
+                <p *ngIf="info.Texte">{{ info.Texte }}</p>
+                <ul *ngIf="info.List">
+                  <li *ngFor="let list of info.List">{{ list }}</li>
+                </ul>
+              </div>
+            </p-accordionTab>
+            <p-accordionTab header="Critères de l'offre:">
+              <ul>
+                <li>Secteur d'activité: {{ details.Secteur }}</li>
+                <li>Type de contrat: {{ details.TypeContrat }}</li>
+                <li>Région: {{ details.Region }}</li>
+                <li>Ville: {{ details.Ville }}</li>
+                <li>Niveaux d'études: {{ details.NiveauxEt }}</li>
+                <li>Niveau d'expérience: {{ details.NiveauxEx }}</li>
+                <li>langues exigées: {{ details.Langues }}</li>
+                <li>Salaire: {{ details.Salaire }}</li>
+                <li>Compétence clés: {{ details.Competences }}</li>
+                <li>Nombres de poste(s): {{ details.NombresPoste }}</li>
+              </ul>
+            </p-accordionTab>
+          </p-accordion>
+        </p-tabPanel>
+
+        <!--2-->
+        <p-tabPanel header="Détail de l'entreprise">
+          <img
+            src="../../../../../assets/images pour offres/téléchargement.png"
+            class="rounded float-end"
+            alt="..."
+          />
+
+          <ul>
+            <li>
+              <h5>L'entreprise: {{ Det_Ent.NomEntreprise }}</h5>
+            </li>
+            <li>Secteur: {{ Det_Ent.Secteur }}</li>
+            <li>Site Internet: {{ Det_Ent.SiteInternet }}</li>
+            <li>Description: {{ Det_Ent.Description }}</li>
+          </ul>
+        </p-tabPanel>
+        <!--3-->
+        <p-tabPanel header="Postulez !">
+          <p>
+            J'ai déja un compte:
+            <a href="#">se connecter</a>
+          </p>
+          <hr />
+          <!--Formulaire postuler-->
+
+          <div>
+            <form [formGroup]="postulezForm" (ngSubmit)="sendPostule()">
+              <div class="row">
+                <!--Salutation-->
+                <div class="mb-3 col-md-2">
+                  <label for="salutation" class="form-label">
+                    {{ 'form.salutation' }}
+                  </label>
+                  <select
+                    id="salutation"
+                    class="form-select"
+                    id="salutation"
+                    formControlName="salutation"
+                    [ngClass]="{
+                      'is-invalid':
+                        postulezForm.get('salutation')?.touched &&
+                        postulezForm.get('salutation')?.invalid
+                    }"
+                  >
+                    <option selected disabled>Civilité</option>
+                    <option>Mme</option>
+                    <option>Mlle</option>
+                    <option>Mr</option>
+                  </select>
+                  <div
+                    *ngIf="
+                      postulezForm.get('salutation')?.touched &&
+                      postulezForm.get('salutation')?.invalid
+                    "
+                    class="invalid-feedback mb-2"
+                  >
+                    <div
+                      *ngIf="postulezForm.get('salutation')?.errors?.['required']"
+                    >
+                      {{ 'form.champ_oblig' }}
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Name input -->
+
+                <div class="mb-3 col-md-5">
+                  <label class="form-label" for="name">{{ 'form.nom' }}</label>
+                  <input
+                    class="form-control"
+                    id="name"
+                    type="text"
+                    placeholder="{{ 'form.exp_nom' }}"
+                    [ngClass]="{
+                      'is-invalid':
+                        postulezForm.get('name')?.touched &&
+                        postulezForm.get('name')?.invalid
+                    }"
+                    formControlName="name"
+                    name="name"
+                  />
+                  <div
+                    *ngIf="
+                      postulezForm.get('name')?.touched &&
+                      postulezForm.get('name')?.invalid
+                    "
+                    class="invalid-feedback mb-2"
+                  >
+                    <div *ngIf="postulezForm.get('name')?.errors?.['required']">
+                      {{ 'form.champ_oblig' }}
+                    </div>
+                    <div
+                      *ngIf="postulezForm.get('name')?.errors?.['minlength']"
+                    >
+                      {{ 'form.champ_3' }}
+                    </div>
+                    <div
+                      *ngIf="postulezForm.get('name')?.errors?.['maxlength']"
+                    >
+                      {{ 'form.champ_30' }}
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Prenom input -->
+                <div class="mb-3 col-md-5">
+                  <label class="form-label" for="prenom">
+                    {{ 'form.prenom' }}
+                  </label>
+                  <input
+                    class="form-control"
+                    id="prenom"
+                    type="prenom"
+                    placeholder="{{ 'form.exp_pre' }}"
+                    formControlName="prenom"
+                    name="prenom"
+                    [ngClass]="{
+                      'is-invalid':
+                        postulezForm.get('prenom')?.touched &&
+                        postulezForm.get('prenom')?.invalid
+                    }"
+                  />
+                  <div
+                    *ngIf="
+                      postulezForm.get('prenom')?.touched &&
+                      postulezForm.get('prenom')?.invalid
+                    "
+                    class="invalid-feedback mb-2"
+                  >
+                    <div
+                      *ngIf="postulezForm.get('prenom')?.errors?.['required']"
+                    >
+                      {{ 'form.champ_oblig' }}
+                    </div>
+                    <div
+                      *ngIf="postulezForm.get('prenom')?.errors?.['minlength']"
+                    >
+                      {{ 'form.champ_3' }}
+                    </div>
+                    <div
+                      *ngIf="postulezForm.get('prenom')?.errors?.['maxlength']"
+                    >
+                      {{ 'form.champ_30' }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Telephone + email address input -->
+              <div class="row">
+                <!-- Email input -->
+                <div class="mb-3 col-md-6">
+                  <label class="form-label" for="emailAddress">
+                    {{ 'form.email' }}
+                  </label>
+                  <input
+                    class="form-control"
+                    id="emailAddress"
+                    type="email"
+                    placeholder="{{ 'form.exp_email' }}"
+                    formControlName="email"
+                    name="email"
+                    [ngClass]="{
+                      'is-invalid':
+                        postulezForm.get('email')?.touched &&
+                        postulezForm.get('email')?.invalid
+                    }"
+                  />
+                  <div
+                    *ngIf="
+                      postulezForm.get('email')?.touched &&
+                      postulezForm.get('email')?.invalid
+                    "
+                    class="invalid-feedback"
+                  >
+                    <div
+                      *ngIf="postulezForm.get('email')?.errors?.['required']"
+                    >
+                      {{ 'form.champ_oblig' }}
+                    </div>
+                    <div *ngIf="postulezForm.get('email')?.errors?.['email']">
+                      {{ 'form.mail_valid' }}
+                    </div>
+                  </div>
+                </div>
+
+                <!--Téléphone-->
+                <div class="mb-3 col-md-3">
+                  <label class="form-label" for="telephone">
+                    {{ 'form.telephone' }}
+                  </label>
+                  <input
+                    class="form-control"
+                    id="telephone"
+                    type="texte"
+                    placeholder="{{ 'form.exp_tel' }}"
+                    formControlName="telephone"
+                    name="telephone"
+                    [ngClass]="{
+                      'is-invalid':
+                        postulezForm.get('telephone')?.touched &&
+                        postulezForm.get('telephone')?.invalid
+                    }"
+                  />
+                  <div
+                    *ngIf="
+                      postulezForm.get('telephone')?.touched &&
+                      postulezForm.get('telephone')?.invalid
+                    "
+                    class="invalid-feedback"
+                  >
+                    <div
+                      *ngIf="postulezForm.get('telephone')?.errors?.['required']"
+                    >
+                      {{ 'form.champ_oblig' }}
+                    </div>
+                    <div
+                      *ngIf="postulezForm.get('telephone')?.errors?.['pattern']"
+                    >
+                      {{ 'form.tel_valid' }}
+                    </div>
+                    <div
+                      *ngIf="postulezForm.get('telephone')?.errors?.['minlength']"
+                    >
+                      {{ 'form.champ_10' }}
+                    </div>
+                  </div>
+                </div>
+                <!--date de naissance-->
+                <div class="mb-3 col-md-3">
+                  <label class="form-label" for="dateNaissance">
+                    {{ 'form.dateNaissance' }}
+                  </label>
+                  <input
+                    id="dateNaissance"
+                    class="form-control"
+                    type="date"
+                    formControlName="dateNaissance"
+                  />
+
+                  <div
+                    *ngIf="
+                      postulezForm.get('dateNaissance')?.touched &&
+                      postulezForm.get('dateNaissance')?.invalid
+                    "
+                    class="invalid-feedback mb-2"
+                  >
+                    <div
+                      *ngIf="postulezForm.get('dateNaissance')?.errors?.['required']"
+                    >
+                      {{ 'form.champ_oblig' }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--N.et N.ex Métier-->
+              <div class="row">
+                <!--Métier-->
+                <div class="mb-3 col-md-4">
+                  <label for="metier" class="form-label">
+                    {{ 'form.metier' }}
+                  </label>
+                  <select
+                    id="metier"
+                    class="form-select"
+                    id="metier"
+                    formControlName="metier"
+                    [ngClass]="{
+                      'is-invalid':
+                        postulezForm.get('metier')?.touched &&
+                        postulezForm.get('metier')?.invalid
+                    }"
+                  >
+                    <option selected>Civilité</option>
+                    <option>Mme</option>
+                    <option>Mlle</option>
+                    <option>Mr</option>
+                  </select>
+                  <div
+                    *ngIf="
+                      postulezForm.get('metier')?.touched &&
+                      postulezForm.get('metier')?.invalid
+                    "
+                    class="invalid-feedback mb-2"
+                  >
+                    <div
+                      *ngIf="postulezForm.get('metier')?.errors?.['required']"
+                    >
+                      {{ 'form.champ_oblig' }}
+                    </div>
+                  </div>
+                </div>
+
+                <!--N.ET-->
+
+                <div class="mb-3 col-md-4">
+                  <label for="niveauEtu" class="form-label">
+                    {{ 'form.niveauEtu' }}
+                  </label>
+                  <select
+                    id="niveauEtu"
+                    class="form-select"
+                    id="niveauEtu"
+                    formControlName="niveauEtu"
+                    [ngClass]="{
+                      'is-invalid':
+                        postulezForm.get('niveauEtu')?.touched &&
+                        postulezForm.get('niveauEtu')?.invalid
+                    }"
+                  >
+                    <option selected>Civilité</option>
+                    <option>Mme</option>
+                    <option>Mlle</option>
+                    <option>Mr</option>
+                  </select>
+                  <div
+                    *ngIf="
+                      postulezForm.get('niveauEtu')?.touched &&
+                      postulezForm.get('niveauEtu')?.invalid
+                    "
+                    class="invalid-feedback mb-2"
+                  >
+                    <div
+                      *ngIf="postulezForm.get('niveauEtu')?.errors?.['required']"
+                    >
+                      {{ 'form.champ_oblig' }}
+                    </div>
+                  </div>
+                </div>
+
+                <!--N.EX-->
+
+                <div class="mb-3 col-md-4">
+                  <label for="niveauExp" class="form-label">
+                    {{ 'form.niveauExp' }}
+                  </label>
+                  <select
+                    id="niveauExp"
+                    class="form-select"
+                    id="niveauExp"
+                    formControlName="niveauExp"
+                    [ngClass]="{
+                      'is-invalid':
+                        postulezForm.get('niveauExp')?.touched &&
+                        postulezForm.get('niveauExp')?.invalid
+                    }"
+                  >
+                    <option selected>Civilité</option>
+                    <option>Mme</option>
+                    <option>Mlle</option>
+                    <option>Mr</option>
+                  </select>
+                  <div
+                    *ngIf="
+                      postulezForm.get('niveauExp')?.touched &&
+                      postulezForm.get('niveauExp')?.invalid
+                    "
+                    class="invalid-feedback mb-2"
+                  >
+                    <div
+                      *ngIf="postulezForm.get('niveauExp')?.errors?.['required']"
+                    >
+                      {{ 'form.champ_oblig' }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-outline-info">
+                Postuler
+              </button>
+            </form>
+          </div>
+
+          <!--Fin Formulaire-->
+        </p-tabPanel>
+      </p-tabView>
+    </div>
+  </div>
+</div>

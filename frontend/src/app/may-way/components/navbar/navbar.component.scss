@@ -1,0 +1,14 @@
+.nav-item.mb-2{ 
+    font-size: 10px;
+}
+.nav-item.dropdown:hover{
+    .dropdown-menu{
+        display: block;
+    }
+}
+.dropdown-menu{
+    display: none;
+}
+.nav-item{
+    padding: 2px 0;
+}

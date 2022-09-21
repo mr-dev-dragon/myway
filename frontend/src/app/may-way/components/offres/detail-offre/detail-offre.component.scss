@@ -1,0 +1,55 @@
+.fa-calendar {
+  padding-right: 5px;
+}
+.socialMedia {
+  padding-right: 10px;
+  color: rgb(61, 61, 61);
+}
+.poste {
+  margin-bottom: 13px;
+}
+.socialMedia1 {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+  margin-bottom: -5px;
+  justify-content: end;
+}
+.criteres-offres {
+  font-weight: bold;
+  color: black;
+}
+.fiche1 {
+  margin-left: 3px;
+}
+:host ::ng-deep .tabview-custom {
+  i,
+  span {
+    vertical-align: middle;
+  }
+
+  span {
+    margin: 0 0.5rem;
+  }
+}
+
+:host ::ng-deep .p-button {
+  margin-right: 0.25rem;
+}
+
+:host ::ng-deep .p-tabview p {
+  line-height: 1.5;
+  margin: 0;
+}
+.details {
+  padding-left: 20px;
+}
+.form1 {
+  padding-top: 20px;
+}
+.p-float-label {
+  padding-left: 5px;
+}
+.p-field {
+  margin-bottom: 30px;
+}

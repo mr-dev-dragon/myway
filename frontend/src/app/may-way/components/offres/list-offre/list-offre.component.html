@@ -47,114 +47,245 @@
         <div class="row">
           <!-- BEGIN FILTERS -->
           <div class="col-md-3">
-            <h2 class="grid-title" style="font-size: 25px"><i class="fa fa-filter"></i> Filtrer</h2>
+            <h2 class="grid-title" style="font-size: 20px; padding-bottom: 6px;"><i class="fa fa-filter"> </i> Filtrer</h2>
             <hr>
             
-            <!-- filter par l'emplacement -->
-            <h4>Emplacements:</h4>
-            <div>
-              <ul style="padding-left: 5px;list-style: none; margin-top: 20px;line-height: 40px;">
-                <li>
-                  <label class="filter">Pays</label>
-                  <div>
-                    <select name="secteur" id="secteur-select" class="form-select" >
-                      <option value="">choisissez le pays </option>
-                      <option value="dog">Tout</option>
-                      <option value="cat">Agriculture</option>
-                      <option value="hamster">Électronique</option>
-                      <option value="parrot">Informatique</option>
-                      <option value="spider">Santé</option>
-                      <option value="goldfish">Textile</option>
-                    </select>
-                  </div>
-                </li>
-                <li><label class="filter">Région</label>
-                  <div>
-                    <select name="secteur" id="secteur-select" class="form-select" >
-                      <option value="">choisissez la région </option>
-                      <option value="dog">Tout</option>
-                      <option value="cat">Agriculture</option>
-                      <option value="hamster">Électronique</option>
-                      <option value="parrot">Informatique</option>
-                      <option value="spider">Santé</option>
-                      <option value="goldfish">Textile</option>
-                    </select>
-                  </div></li>
-                <li><label class="filter">Ville</label>
-                  <div>
-                    <select name="secteur" id="secteur-select" class="form-select" >
-                      <option value="">choisissez la ville </option>
-                      <option value="dog">Tout</option>
-                      <option value="cat">Agriculture</option>
-                      <option value="hamster">Électronique</option>
-                      <option value="parrot">Informatique</option>
-                      <option value="spider">Santé</option>
-                      <option value="goldfish">Textile</option>
-                    </select>
-                  </div></li>
-                </ul>
+            <!--  début filter par l'emplacement -->
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <h4>Emplacements:</h4>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    <div>
+                      <ul style="padding-left: 5px;list-style: none; margin-top: 20px;line-height: 40px;">
+                        <li>
+                          <label class="filter">Pays</label>
+                          <div>
+                            <select name="secteur" id="secteur-select" class="form-select" >
+                              <option value="">choisissez le pays </option>
+                              <option value="dog">Tout</option>
+                              <option value="cat">Agriculture</option>
+                              <option value="hamster">Électronique</option>
+                              <option value="parrot">Informatique</option>
+                              <option value="spider">Santé</option>
+                              <option value="goldfish">Textile</option>
+                            </select>
+                          </div>
+                        </li>
+                        <li><label class="filter">Région</label>
+                          <div>
+                            <select name="secteur" id="secteur-select" class="form-select" >
+                              <option value="">choisissez la région </option>
+                              <option value="dog">Tout</option>
+                              <option value="cat">Agriculture</option>
+                              <option value="hamster">Électronique</option>
+                              <option value="parrot">Informatique</option>
+                              <option value="spider">Santé</option>
+                              <option value="goldfish">Textile</option>
+                            </select>
+                          </div></li>
+                        <li><label class="filter">Ville</label>
+                          <div>
+                            <select name="secteur" id="secteur-select" class="form-select" >
+                              <option value="">choisissez la ville </option>
+                              <option value="dog">Tout</option>
+                              <option value="cat">Agriculture</option>
+                              <option value="hamster">Électronique</option>
+                              <option value="parrot">Informatique</option>
+                              <option value="spider">Santé</option>
+                              <option value="goldfish">Textile</option>
+                            </select>
+                          </div></li>
+                        </ul>
+                    </div>
+                          </div>
+                </div>
+              </div>
+              <!--fin de filtrage par emplacement-->
+
+
+              <!-- BEGIN FILTER BY DATE -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    <h4>Par date:</h4>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+  
+                    <label class="filter">Début:</label>
+                    <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2">
+                      <input class="input-group date form_date form-control" type="date" id="start" name="trip-start" >
+                    </div>
+                    <input type="hidden" id="dtp_input1" value="">
+                    
+                    <label class="filter">Fin:</label>
+                    <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2">
+                      <input class="input-group date form_date form-control" type="date" id="start" name="trip-start" >
+                    </div>
+                    <input type="hidden" id="dtp_input2" value="">
+                  </div>                  </div>
+                </div>
+              <!-- END FILTER BY DATE -->
+
+
+                <!--début de filtrage par type de contrat-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <h4>Type de contrat:</h4>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body">
+                    <div style="margin-top: 20px; font-size: 20px;">
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> A discuter</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Anapec</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> CDD</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> CDI</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Freelance</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Intérim</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Stage</label>
+                      </div>
+                    </div>                  </div>
+                </div>
+              </div>
+                <!-- fin de filtrage par type de contrat -->
+
+
+                <!--début de filtrage par Niveaux d'études-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    <h4>Niveau d'étude:</h4>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body">
+                    <div style="margin-top: 20px; font-size: 20px;">
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Qualification avant bac</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Bac</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> CDD</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> CDI</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Freelance</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Intérim</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Stage</label>
+                      </div>
+                      </div>                  </div>
+                </div>
+              </div>
+               <!--fin de filtrage par Niveaux d'études-->
+
+               <!--début de filtrage par Niveaux d'expérience-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    <h4>Niveau d'expérience:</h4>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                  <div class="accordion-body">
+                    <div style="margin-top: 20px; font-size: 20px;">
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Qualification avant bac</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Bac</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> CDD</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> CDI</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Freelance</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Intérim</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Stage</label>
+                      </div>
+                      </div>                  </div>
+                </div>
+              </div>
+            
+            <!--fin de filtrage par Niveaux d'expérience-->
+
+
+               <!--début de filtrage par langues-->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                    <h4>Langues:</h4>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                  <div class="accordion-body">
+                    <div style="margin-top: 20px; font-size: 20px;">
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Anglais</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Arabe</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Français</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Espagnol</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Riffienne</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" class="icheck"> Allemande</label>
+                      </div>
+                      
+                      </div>                  </div>
+                </div>
+              </div>
             </div>
+            <!--fin de filtrage par langues-->
 
 
-          
+
+
+            
             <div class="padding"></div>
-            <hr>
-            <!-- BEGIN FILTER BY DATE -->
-            <div style="line-height: 40px;">
-            <h4>Par date:</h4>
-           <label class="filter">Début:</label>
-            <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2">
-              <input class="input-group date form_date form-control" type="date" id="start" name="trip-start" >
-              <!-- <span class="input-group-addon bg-blue"><i class="fa fa-th"></i></span> -->
-            </div>
-            <input type="hidden" id="dtp_input1" value="">
-            
-            <label class="filter">Fin:</label>
-            <div class="input-group date form_date" data-date="2014-06-14T05:25:07Z" data-date-format="dd-mm-yyyy" data-link-field="dtp_input2">
-              <input class="input-group date form_date form-control" type="date" id="start" name="trip-start" >
-            </div>
-            <input type="hidden" id="dtp_input2" value="">
-          </div>
-            <!-- END FILTER BY DATE -->
-
-
-            <!--début de filtrage par type de contrat-->
-            <hr>
-            <h4>Type de contrat:</h4>
-           <div style="margin-top: 20px; font-size: 20px;">
-            <div class="checkbox">
-              <label><input type="checkbox" class="icheck"> A discuter</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" class="icheck"> Anapec</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" class="icheck"> CDD</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" class="icheck"> CDI</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" class="icheck"> Freelance</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" class="icheck"> Intérim</label>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" class="icheck"> Stage</label>
-            </div>
-          </div>
-            <!-- fin de filtrage par type de contrat -->
-            
-            <hr>
-            <div class="padding"></div>
-            
-            <!-- BEGIN FILTER BY PRICE -->
-            <!-- <h4>Salaire:</h4>
-            <div class="slider-primary">
-              <div class="slider slider-horizontal" style="width: 152px;"><div class="slider-track"><div class="slider-selection" style="left: 30%; width: 50%;"></div><div class="slider-handle round" style="left: 30%;"></div><div class="slider-handle round" style="left: 80%;"></div></div><div class="tooltip top hide" style="top: -30px; left: 50.1px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">300 : 800</div></div><input type="text" class="slider" value="" data-slider-min="0" data-slider-max="1000" data-slider-step="1" data-slider-value="[300,800]" data-slider-tooltip="hide"></div>
-            </div> -->
-            <!-- END FILTER BY PRICE -->
 
 
             
@@ -162,35 +293,51 @@
           <!-- END FILTERS -->
           <!-- BEGIN RESULT -->
           <div class="col-md-9">
-            <h2 style="font-size: 25px"> Result</h2>
+            <h2 style="font-size: 25px"> Résultats des offres </h2>
             <hr>
             <!-- BEGIN SEARCH INPUT -->
-            <div class="input-group">
+            <!-- <div class="input-group">
               <input type="text" class="form-control" value="web development">
               <span class="input-group-btn">
                 <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
               </span>
-            </div>
+            </div> -->
             <!-- END SEARCH INPUT -->
-            <p>Showing all results matching "web development"</p>
+            <p></p>
             
             <div class="padding"></div>
             
             <div class="row">
               <!-- BEGIN ORDER RESULT -->
               <div class="col-sm-6">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    Order by <span class="caret"></span>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor"
+                  aria-controls="navbarColor" aria-expanded="false" aria-label="Toggle navigation">
+                    Order by 
+                    <!-- <span class="caret"></span> -->
                   </button>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Name</a></li>
-                    <li><a href="#">Date</a></li>
-                    <li><a href="#">View</a></li>
-                    <li><a href="#">Rating</a></li>
-                  </ul>
+                  <div class=" collapse dropdown-menu" id="navbarColor" aria-labelledby="dropdownMenuButton" role="menu">
+                    <a class="dropdown-item" href="#">Name</a>
+                    <a class="dropdown-item" href="#">Date</a>
+                    <a class="dropdown-item" href="#">View</a>
+                    <a class="dropdown-item" href="#">Rating</a>
+                  </div>
                 </div>
               </div>
+
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" (mouseover)="Showmenu2=true" (mouseout)="Showmenu2=false">
+                  Infos pratiques
+                </a>
+                <ul *ngIf="Showmenu2" class="d-block dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Conseils pratiques</a></li>
+                  <li><a class="dropdown-item" href="#">Adresses utiles  </a></li>
+                  <li><a class="dropdown-item" href="#">Liens utiles</a></li>
+                  <li><a class="dropdown-item" href="#">Documents et formulaires à télécharger</a></li>
+                  <li><a class="dropdown-item" href="#">législations et textes de lois</a></li>
+                  <li><a class="dropdown-item" href="#">Evénements et actualités</a></li>
+                </ul>
+              </li> -->
               <!-- END ORDER RESULT -->
               
               <div class="col-md-6 text-right">
@@ -204,62 +351,38 @@
             <!-- BEGIN TABLE RESULT -->
             <div class="table-responsive">
               <table class="table table-hover">
-                <tbody><tr>
-                  <td class="number text-center">1</td>
-                  <td class="image"><img src="https://via.placeholder.com/400x300/FF8C00" alt=""></td>
-                  <td class="product"><strong>Product 1</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
-                  <td class="price text-right">$350</td>
+                <tbody>
+                  <div *ngFor="let offre of offres" style="border-bottom: 1px solid #c7c3c3;padding-bottom: 5px;margin-bottom: 6px;">
+                  <tr style="border: 0;">
+                  <td class="number text-center"></td>
+                  <td class="image"><img src="../../../../../assets/images pour offres/téléchargement.png" alt="" class="img-offre" style="margin-inline-end: 13px;"></td>
+                  <td class="product" style="line-height: 1.42857143;
+                  vertical-align: top;"> <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{offre.Intitule}} / {{offre.Secteur}}</h5>
+                      
+                      <h6 class="" style="margin-top: 10px;">{{offre.NomEntreprise}}: {{offre.TypeEntreprise}}</h6>
+                      <p class="card-text "> Compétences requises: {{offre.Competences}}</p>
+                      <ul class="p-0"><small class="text-muted" style="list-style: none; display: flex;justify-content: space-between;">
+                        <li><i class="fa-solid fa-file-contract"></i> {{offre.TypeContrat}}</li>
+                        <li><i class="fa-solid fa-location-dot"> </i> {{offre.Ville}}</li>
+                        <li><i class="fa-regular fa-calendar"></i> {{offre.Date}}</li></small>
+                      </ul>
+                      
+                    </div>
+                  </div>
+                    <!-- <strong>{{offre.Intitule}}</strong><br>{{offre.Secteur}} -->
+                  </td>
+                 
+                 
+                 
+                 
+                  <td class="favorite-offre">
+                    <button class="btn-fav" style="border-style: none;"><i class="far fa-heart"></i></button>
+                    </td>
+                    <br>
                 </tr>
-                <tr>
-                  <td class="number text-center">2</td>
-                  <td class="image"><img src="https://via.placeholder.com/400x300/5F9EA0" alt=""></td>
-                  <td class="product"><strong>Product 2</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span></td>
-                  <td class="price text-right">$1,050</td>
-                </tr>
-                <tr>
-                  <td class="number text-center">3</td>
-                  <td class="image"><img src="https://via.placeholder.com/400x300" alt=""></td>
-                  <td class="product"><strong>Product 3</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></span></td>
-                  <td class="price text-right">$550</td>
-                </tr>
-                <tr>
-                  <td class="number text-center">4</td>
-                  <td class="image"><img src="https://via.placeholder.com/400x300/8A2BE2" alt=""></td>
-                  <td class="product"><strong>Product 4</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></td>
-                  <td class="price text-right">$330</td>
-                </tr>
-                <tr>
-                  <td class="number text-center">5</td>
-                  <td class="image"><img src="https://via.placeholder.com/400x300" alt=""></td>
-                  <td class="product"><strong>Product 5</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span></td>
-                  <td class="price text-right">$540</td>
-                </tr>
-                <tr>
-                  <td class="number text-center">6</td>
-                  <td class="image"><img src="https://via.placeholder.com/400x300/6495ED" alt=""></td>
-                  <td class="product"><strong>Product 6</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
-                  <td class="price text-right">$870</td>
-                </tr>
-                <tr>
-                  <td class="number text-center">7</td>
-                  <td class="image"><img src="https://via.placeholder.com/400x300/DC143C" alt=""></td>
-                  <td class="product"><strong>Product 7</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span></td>
-                  <td class="price text-right">$620</td>
-                </tr>
-                <tr>
-                  <td class="number text-center">8</td>
-                  <td class="image"><img src="https://via.placeholder.com/400x300/9932CC" alt=""></td>
-                  <td class="product"><strong>Product 8</strong><br>This is the product description.</td>
-                  <td class="rate text-right"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></td>
-                  <td class="price text-right">$1,550</td>
-                </tr>
+                </div>
               </tbody></table>
             </div>
             <!-- END TABLE RESULT -->
